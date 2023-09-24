@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragment_mission"
     android:orientation="vertical">
 
@@ -12,8 +13,9 @@
     <!-- ViewPager to display tab contents -->
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="68dp">
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/grad_mission">
 
 
         <TextView
@@ -22,17 +24,17 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:text="@string/missions"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/profileImageView"
             android:layout_width="52dp"
             android:layout_height="68dp"
-            android:layout_marginTop="1dp"
             android:layout_marginLeft="130dp"
-            android:src="@drawable/profile_placeholder"
-            />
+            android:layout_marginTop="1dp"
+            android:src="@drawable/profile_placeholder" />
     </LinearLayout>
 
 
@@ -42,7 +44,9 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1C2834" />
+        android:background="#1C2834"
+        style="@style/CustomTabLayout"
+        />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Keep your model classes and their fields-keep class com.example.gaia.Model.** { *; }
+
+# Keep any other specific classes you want to preserve-keep class com.example.gaia.SomeOtherClass { *; }

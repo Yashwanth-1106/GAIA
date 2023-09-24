@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="50dp"
         android:hint="Email"
-        android:padding="8dp"
+        android:padding="10dp"
         android:background="#1B1B1B"
         android:layout_marginHorizontal="20dp"
         android:ems="10"
@@ -31,30 +31,49 @@
         android:textColor="@color/white"
         android:inputType="textEmailAddress"
         android:layout_height="60dp"/>
-    <EditText
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etdP"
+        android:layout_width="365dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/etdEmail"
         android:layout_marginTop="50dp"
-        android:id="@+id/etdPass"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColorHint="#A5A6A8"
-        android:padding="8dp"
-        android:background="#1b1b1b"
         android:layout_marginHorizontal="20dp"
-        android:drawableEnd="@drawable/baseline_remove_red_eye_24"
-        android:hint="Password"
-        android:textColor="@color/white"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_below="@id/etdEmail"/>
+        android:textColorHint="#A5A6A8"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+
+        >
+
+
+        <EditText
+            android:id="@+id/etdPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/etdEmail"
+            android:background="#1b1b1b"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A5A6A8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <Button
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="250dp"
         android:id="@+id/lgnBtn"
         android:layout_centerHorizontal="true"
         app:backgroundTint="#0A81E7"
         android:layout_marginHorizontal="20dp"
-        android:layout_below="@id/etdPass"
+        android:layout_below="@id/etdP"
         android:layout_width="400dp"
         android:text="@string/login"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/round_bt"
         android:layout_height="60dp"/>
 
 </RelativeLayout>

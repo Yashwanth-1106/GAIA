@@ -35,7 +35,7 @@ public class MissionFragment extends Fragment {
         androidx.viewpager.widget.ViewPager viewPager = rootView.findViewById(R.id.viewPager);
 
         // Set up the ViewPager with the adapter
-      ViewPager adapter = new ViewPager(getChildFragmentManager());
+      ViewPager adapter = new ViewPager(getChildFragmentManager(),getContext());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
