@@ -74,7 +74,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 NavController navController = Navigation.findNavController(view);
-                navController.navigate(R.id.action_profileFragment_to_missionFragment);
+                navController.navigateUp();
             }
         });
 

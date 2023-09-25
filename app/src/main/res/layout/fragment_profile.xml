@@ -30,14 +30,16 @@
         android:textSize="35dp"
         android:textStyle="bold"/>
 
+
     <ImageView
-        android:layout_width="wrap_content"
         android:id="@+id/iv"
+        android:layout_width="wrap_content"
         android:layout_height="214dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="99dp"
         android:layout_marginTop="124dp"
         android:layout_marginEnd="101dp"
@@ -47,37 +49,35 @@
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_below="@+id/iv"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="-450dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="338dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginBottom="354dp"
+        android:padding="5dp"
         android:text="User Name"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="35dp"
         android:textStyle="bold" />
 
-
     <TextView
-
         android:id="@+id/tvv"
-        android:layout_width="162dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="-330dp"
-        android:text="Mobile Number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="430dp"
+        android:text="mobile number"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tvvv"
-        android:layout_width="118dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvv"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="55dp"
         android:text="User Email"
         android:textColor="@color/white"
         android:textSize="20sp" />
