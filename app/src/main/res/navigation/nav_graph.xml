@@ -23,6 +23,8 @@
             android:id="@+id/action_missionFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
+
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.gaia.Home.ProfileFragment"

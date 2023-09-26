@@ -38,20 +38,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    @Override
-    public void onBackPressed() {
-        // Show a confirmation dialog before exiting the app
-        new AlertDialog.Builder(this)
-                .setTitle("Exit App")
-                .setMessage("Are you sure you want to exit the app?")
-                .setPositiveButton("Yes", (dialogInterface, i) -> {
-                    // If the user confirms, exit the app
-                    finish();
-                })
-                .setNegativeButton("No", (dialogInterface, i) -> {
-                    // If the user cancels, dismiss the dialog
-                    dialogInterface.dismiss();
-                })
-                .show();
-    }
+
 }
